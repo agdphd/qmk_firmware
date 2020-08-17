@@ -1,3 +1,7 @@
 #pragma once
 
 #define IGNORE_MOD_TAP_INTERRUPT
+#define UNICODE_SELECTED_MODES UC_LNX
+
+#define NO_ACTION_MACRO
+#define NO_ACTION_FUNCTION
