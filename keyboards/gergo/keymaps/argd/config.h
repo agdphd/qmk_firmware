@@ -5,3 +5,8 @@
 
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
+
+#ifdef TAPPING_TOGGLE
+#undef TAPPING_TOGGLE
+#endif
+#define TAPPING_TOGGLE 2
