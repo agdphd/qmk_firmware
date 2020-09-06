@@ -3,19 +3,13 @@
 # Make sure you have dfu-programmer installed!
 #----------------------------------------------------------------------------
 # Firmware options
-BALLER = no 			# Enable to ball out
-BALLSTEP = 20  			# Multiple in px to move, multiplied by layer number
-SCROLLSTEP = 1 			# Lines to scroll with ball
-MOUSEKEY_ENABLE = no  	# Mouse keys, needed for baller
-
-KEY_LOCK_ENABLE = yes
 COMPOSE_ENABLE = yes
 UNICODE_ENABLE = yes
 
 # Minify the firmware, but break macros and functions
 EXTRAFLAGS += -flto
 
-#Debug options
+# Debug options
 CONSOLE_ENABLE = no
 VERBOSE = no
 DEBUG_MATRIX_SCAN_RATE = no
@@ -28,18 +22,18 @@ DEBUG_MATRIX = no
 # No touchy, capiche?
 SRC += matrix.c i2c_master.c
 ifneq ($(strip $(BALLSTEP)),)
-    OPT_DEFS += -DTRKSTEP=$(strip $(BALLSTEP))
+OPT_DEFS += -DTRKSTEP=$(strip $(BALLSTEP))
 endif
 ifneq ($(strip $(SCROLLSTEP)),)
-    OPT_DEFS += -DSCROLLSTEP=$(strip $(SCROLLSTEP))
+OPT_DEFS += -DSCROLLSTEP=$(strip $(SCROLLSTEP))
 endif
 ifeq ($(strip $(BALLER)), yes)
-	POINTING_DEVICE_ENABLE	= yes
-    OPT_DEFS += -DBALLER
+POINTING_DEVICE_ENABLE	= yes
+OPT_DEFS += -DBALLER
 endif
 ifeq ($(strip $(DEBUG_BALLER)), yes)
-    OPT_DEFS += -DDEBUG_BALLER
+OPT_DEFS += -DDEBUG_BALLER
 endif
 ifeq ($(strip $(DEBUG_MATRIX)), yes)
-    OPT_DEFS += -DDEBUG_MATRIX
+OPT_DEFS += -DDEBUG_MATRIX
 endif
