@@ -5,6 +5,7 @@
 # Firmware options
 COMPOSE_ENABLE = yes
 UNICODE_ENABLE = yes
+EXTRAKEY_ENABLE = yes
 
 # Minify the firmware, but break macros and functions
 EXTRAFLAGS += -flto
