@@ -48,8 +48,8 @@ LAYOUT_gergo(\
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_gergo(
  XXXXXXX,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, XXXXXXX,
- XXXXXXX,GUI_T(KC_A),ALT_T(KC_S),CTL_T(KC_D),SFT_T(KC_F),    KC_G, XXXXXXX,                        XXXXXXX,KC_H,SFT_T(KC_J),CTL_T(KC_K),ALT_T(KC_L),GUI_T(KC_QUOT),XXXXXXX,
- XXXXXXX,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, XXXXXXX, XXXXXXX,      XXXXXXX, XXXXXXX,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, XXXXXXX,
+ XXXXXXX,GUI_T(KC_A),ALT_T(KC_S),CTL_T(KC_D),SFT_T(KC_F), KC_G, XXXXXXX,     XXXXXXX,KC_H,SFT_T(KC_J),CTL_T(KC_K),ALT_T(KC_L),GUI_T(KC_QUOT),XXXXXXX,
+ XXXXXXX,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, XXXXXXX, XXXXXXX,        RESET, XXXXXXX,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, XXXXXXX,
                KC_APP,LT(RFUN,KC_ESC),LT(RSYM,KC_SPC),LT(RNAV,KC_TAB),        LT(LNAV,KC_ENT),LT(LSYM,KC_BSPC),LT(LFUN,KC_DEL), COMPOSE
 ),
 
