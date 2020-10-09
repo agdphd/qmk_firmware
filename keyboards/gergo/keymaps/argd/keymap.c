@@ -108,35 +108,46 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
 }
 
 void render_layer_state(void) {
-    oled_write_P(PSTR("LAYR:"), false);
-    oled_write_ln_P(PSTR("SYMB"), layer_state_is(LSYM) || layer_state_is(RSYM));
-    oled_write_ln_P(PSTR("NAVI"), layer_state_is(LNAV) || layer_state_is(RNAV));
-    oled_write_ln_P(PSTR("FUNC"), layer_state_is(LFUN) || layer_state_is(RFUN));
+    oled_write_P(PSTR("LAYER"), false);
+    oled_write_P(PSTR("symb\n"), layer_state_is(LSYM) || layer_state_is(RSYM));
+    oled_write_P(PSTR("navi\n"), layer_state_is(LNAV) || layer_state_is(RNAV));
+    oled_write_P(PSTR("func\n"), layer_state_is(LFUN) || layer_state_is(RFUN));
 }
 
 void render_mod_state(void) {
     uint8_t modifiers = get_mods()|get_oneshot_mods();
-    oled_write_P(PSTR("MODS:"), false);
-    oled_write_ln_P(PSTR("SHFT"), (modifiers & MOD_MASK_SHIFT));
-    oled_write_ln_P(PSTR("CTRL"), (modifiers & MOD_MASK_CTRL));
-    oled_write_ln_P(PSTR("ALT"), (modifiers & MOD_MASK_ALT));
-    oled_write_ln_P(PSTR("GUI"), (modifiers & MOD_MASK_GUI));
+    oled_write_P(PSTR("MODS\n"), false);
+    oled_write_P(PSTR("shft\n"), (modifiers & MOD_MASK_SHIFT));
+    oled_write_P(PSTR("ctrl\n"), (modifiers & MOD_MASK_CTRL));
+    oled_write_P(PSTR("alt\n"), (modifiers & MOD_MASK_ALT));
+    oled_write_P(PSTR("gui\n"), (modifiers & MOD_MASK_GUI));
 }
 
 void render_keylock_state(void) {
     led_t led_state = host_keyboard_led_state();
-    oled_write_P(PSTR("LOCK:"), false);
-    oled_write_ln_P(PSTR("CAPS"), led_state.caps_lock);
+    oled_write_P(PSTR("LOCK\n"), false);
+    oled_write_P(PSTR("caps\n"), led_state.caps_lock);
+}
+
+void render_logo(void) {
+    oled_write_P(PSTR("gergo"), false);
+    oled_write_P(PSTR("argd\n"), false);
+}
+
+void render_blank_line(void) {
+    oled_write_P(PSTR("\n"), false);
 }
 
 void oled_task_user(void) {
-    oled_write_P(PSTR("gergo"), false);
-    oled_write_P(PSTR("argd\n\n"), false);
-
     render_layer_state();
-    oled_write_ln_P(PSTR(" "), false);
+    render_blank_line();
+    
     render_mod_state();
-    oled_write_ln_P(PSTR(" "), false);
+    render_blank_line();
+    
     render_keylock_state();
+    render_blank_line();
+    
+    render_logo();
 }
 #endif
