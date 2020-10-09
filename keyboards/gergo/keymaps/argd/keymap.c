@@ -101,3 +101,42 @@ void keyboard_post_init_user(void) {
     declare_compose_seq((uint64_t[]){KC_H, KC_A, KC_P, KC_P, KC_Y}, 5, "ᕕ( ᐛ )ᕗ");
     declare_compose_seq((uint64_t[]){KC_Y, KC_U, KC_N, KC_O}, 4, "ლ(ಠ益ಠლ)");
 }
+
+#ifdef OLED_DRIVER_ENABLE
+oled_rotation_t oled_init_user(oled_rotation_t rotation) {
+    return OLED_ROTATION_90;
+}
+
+void render_layer_state(void) {
+    oled_write_P(PSTR("LAYR:"), false);
+    oled_write_ln_P(PSTR("SYMB"), layer_state_is(LSYM) || layer_state_is(RSYM));
+    oled_write_ln_P(PSTR("NAVI"), layer_state_is(LNAV) || layer_state_is(RNAV));
+    oled_write_ln_P(PSTR("FUNC"), layer_state_is(LFUN) || layer_state_is(RFUN));
+}
+
+void render_mod_state(void) {
+    uint8_t modifiers = get_mods()|get_oneshot_mods();
+    oled_write_P(PSTR("MODS:"), false);
+    oled_write_ln_P(PSTR("SHFT"), (modifiers & MOD_MASK_SHIFT));
+    oled_write_ln_P(PSTR("CTRL"), (modifiers & MOD_MASK_CTRL));
+    oled_write_ln_P(PSTR("ALT"), (modifiers & MOD_MASK_ALT));
+    oled_write_ln_P(PSTR("GUI"), (modifiers & MOD_MASK_GUI));
+}
+
+void render_keylock_state(void) {
+    led_t led_state = host_keyboard_led_state();
+    oled_write_P(PSTR("LOCK:"), false);
+    oled_write_ln_P(PSTR("CAPS"), led_state.caps_lock);
+}
+
+void oled_task_user(void) {
+    oled_write_P(PSTR("gergo"), false);
+    oled_write_P(PSTR("argd\n\n"), false);
+
+    render_layer_state();
+    oled_write_ln_P(PSTR(" "), false);
+    render_mod_state();
+    oled_write_ln_P(PSTR(" "), false);
+    render_keylock_state();
+}
+#endif
