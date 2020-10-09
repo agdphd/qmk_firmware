@@ -127,11 +127,11 @@ void render_keylock_state(void) {
     led_t led_state = host_keyboard_led_state();
     oled_write_P(PSTR("LOCK\n"), false);
     oled_write_P(PSTR("caps\n"), led_state.caps_lock);
+    oled_write_P(PSTR("comp\n"), compose_active());
 }
 
 void render_logo(void) {
     oled_write_P(PSTR("gergo"), false);
-    oled_write_P(PSTR("argd\n"), false);
 }
 
 void render_blank_line(void) {
