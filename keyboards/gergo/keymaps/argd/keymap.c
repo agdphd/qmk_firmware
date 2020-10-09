@@ -94,7 +94,10 @@ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 };
 
 void keyboard_post_init_user(void) {
-    declare_compose_seq((uint64_t[]){KC_G, KC_A}, 2, "α");
-    declare_compose_seq((uint64_t[]){KC_G, KC_B}, 2, "β");
+    declare_compose_seq((uint64_t[]){KC_MINS, KC_MINS, KC_DOT}, 3, "–"); // endash
+    declare_compose_seq((uint64_t[]){KC_MINS, KC_MINS, KC_DOT}, 3, "—"); // emdash
     declare_compose_seq((uint64_t[]){KC_S, KC_H, KC_R, KC_U, KC_G}, 5, "¯\\_(ツ)_/¯");
+    declare_compose_seq((uint64_t[]){KC_F, KC_L, KC_I, KC_P}, 4, "(╯°□°)╯︵ ┻━┻");
+    declare_compose_seq((uint64_t[]){KC_H, KC_A, KC_P, KC_P, KC_Y}, 5, "ᕕ( ᐛ )ᕗ");
+    declare_compose_seq((uint64_t[]){KC_Y, KC_U, KC_N, KC_O}, 4, "ლ(ಠ益ಠლ)");
 }
