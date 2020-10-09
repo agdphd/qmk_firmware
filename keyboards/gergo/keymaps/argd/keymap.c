@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = LAYOUT_gergo(
  XXXXXXX,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, XXXXXXX,
  XXXXXXX,GUI_T(KC_A),ALT_T(KC_S),CTL_T(KC_D),SFT_T(KC_F), KC_G, XXXXXXX,     XXXXXXX,KC_H,SFT_T(KC_J),CTL_T(KC_K),ALT_T(KC_L),GUI_T(KC_QUOT),XXXXXXX,
- XXXXXXX,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, XXXXXXX, XXXXXXX,        RESET, XXXXXXX,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, XXXXXXX,
+ XXXXXXX,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, XXXXXXX, XXXXXXX,      XXXXXXX, XXXXXXX,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, XXXXXXX,
                KC_APP,LT(RFUN,KC_ESC),LT(RSYM,KC_SPC),LT(RNAV,KC_TAB),        LT(LNAV,KC_ENT),LT(LSYM,KC_BSPC),LT(LFUN,KC_DEL), COMPOSE
 ),
 
@@ -117,10 +117,10 @@ void render_layer_state(void) {
 void render_mod_state(void) {
     uint8_t modifiers = get_mods()|get_oneshot_mods();
     oled_write_P(PSTR("MODS\n"), false);
-    oled_write_P(PSTR("shft\n"), (modifiers & MOD_MASK_SHIFT));
-    oled_write_P(PSTR("ctrl\n"), (modifiers & MOD_MASK_CTRL));
-    oled_write_P(PSTR("alt\n"), (modifiers & MOD_MASK_ALT));
-    oled_write_P(PSTR("gui\n"), (modifiers & MOD_MASK_GUI));
+    oled_write_P(PSTR("s"), (modifiers & MOD_MASK_SHIFT));
+    oled_write_P(PSTR("c"), (modifiers & MOD_MASK_CTRL));
+    oled_write_P(PSTR("a"), (modifiers & MOD_MASK_ALT));
+    oled_write_P(PSTR("g\n"), (modifiers & MOD_MASK_GUI));
 }
 
 void render_keylock_state(void) {
@@ -132,6 +132,7 @@ void render_keylock_state(void) {
 
 void render_logo(void) {
     oled_write_P(PSTR("gergo"), false);
+    oled_write_P(PSTR("argd"), false);
 }
 
 void render_blank_line(void) {
@@ -146,6 +147,7 @@ void oled_task_user(void) {
     render_blank_line();
     
     render_keylock_state();
+    render_blank_line();
     render_blank_line();
     
     render_logo();
