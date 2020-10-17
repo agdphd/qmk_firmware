@@ -102,7 +102,36 @@ void keyboard_post_init_user(void) {
     declare_compose_seq((uint64_t[]){KC_Y, KC_U, KC_N, KC_O}, 4, "ლ(ಠ益ಠლ)");
 }
 
-#ifdef OLED_DRIVER_ENABLE
+static uint16_t last_keypress = 0;
+char keypress_str[5] = "00000";
+
+void increment_keypress_str(void) {
+    // base-10 ripple-carry adder, wheee
+    char* ptr = keypress_str + 4;
+    while (ptr != NULL) {
+        if (*ptr < '9') {
+            ++*ptr;
+            ptr = NULL;
+        } else {
+            *ptr = '0';
+            if (ptr > keypress_str) {
+                --ptr;
+            } else {
+                ptr = NULL;
+            }
+        }
+    }
+}
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (record->event.pressed) {
+        last_keypress = timer_read();
+        increment_keypress_str();
+        oled_on();
+    }
+    return true;
+}
+
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     return OLED_ROTATION_90;
 }
@@ -131,6 +160,7 @@ void render_keylock_state(void) {
 }
 
 void render_logo(void) {
+    oled_write(keypress_str, false);
     oled_write_P(PSTR("gergo"), false);
     oled_write_P(PSTR("argd"), false);
 }
@@ -139,17 +169,24 @@ void render_blank_line(void) {
     oled_write_P(PSTR("\n"), false);
 }
 
-void oled_task_user(void) {
+void render_main(void) {
     render_layer_state();
     render_blank_line();
-    
+
     render_mod_state();
     render_blank_line();
-    
+
     render_keylock_state();
     render_blank_line();
     render_blank_line();
-    
+
     render_logo();
 }
-#endif
+
+void oled_task_user(void) {
+    if (timer_elapsed(last_keypress) > 30000) {
+        oled_off();
+    } else {
+        render_main();
+    }
+}
