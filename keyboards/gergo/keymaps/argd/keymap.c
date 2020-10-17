@@ -103,9 +103,9 @@ void keyboard_post_init_user(void) {
 }
 
 static uint16_t last_keypress = 0;
-char keypress_str[5] = "00000";
+static char keypress_str[5] = "00000";
 
-void increment_keypress_str(void) {
+static void increment_keypress_str(void) {
     // base-10 ripple-carry adder, wheee
     char* ptr = keypress_str + 4;
     while (ptr != NULL) {
@@ -136,14 +136,14 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     return OLED_ROTATION_90;
 }
 
-void render_layer_state(void) {
+static void render_layer_state(void) {
     oled_write_P(PSTR("LAYER"), false);
     oled_write_P(PSTR("symb\n"), layer_state_is(LSYM) || layer_state_is(RSYM));
     oled_write_P(PSTR("navi\n"), layer_state_is(LNAV) || layer_state_is(RNAV));
     oled_write_P(PSTR("func\n"), layer_state_is(LFUN) || layer_state_is(RFUN));
 }
 
-void render_mod_state(void) {
+static void render_mod_state(void) {
     uint8_t modifiers = get_mods()|get_oneshot_mods();
     oled_write_P(PSTR("MODS\n"), false);
     oled_write_P(PSTR("s"), (modifiers & MOD_MASK_SHIFT));
@@ -152,24 +152,24 @@ void render_mod_state(void) {
     oled_write_P(PSTR("g\n"), (modifiers & MOD_MASK_GUI));
 }
 
-void render_keylock_state(void) {
+static void render_keylock_state(void) {
     led_t led_state = host_keyboard_led_state();
     oled_write_P(PSTR("LOCK\n"), false);
     oled_write_P(PSTR("caps\n"), led_state.caps_lock);
     oled_write_P(PSTR("comp\n"), compose_active());
 }
 
-void render_logo(void) {
+static void render_logo(void) {
     oled_write(keypress_str, false);
     oled_write_P(PSTR("gergo"), false);
     oled_write_P(PSTR("argd"), false);
 }
 
-void render_blank_line(void) {
+static void render_blank_line(void) {
     oled_write_P(PSTR("\n"), false);
 }
 
-void render_main(void) {
+static void render_main(void) {
     render_layer_state();
     render_blank_line();
 
