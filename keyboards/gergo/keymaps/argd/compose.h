@@ -1,4 +1,6 @@
-const ComposeTrie compose_trie ={
+// Auto-generated from keyboards/gergo/keymaps/argd/compose.conf.
+// DO NOT EDIT MANUALLY
+const ComposeTrie compose_trie = {
 .keycode = KC_MINS,
 .sibling = &(struct ComposeTrie)
     {

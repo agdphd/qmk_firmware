@@ -5,7 +5,6 @@ from argparse import FileType
 from milc import cli
 import shlex
 
-
 class ComposeSequencePrefixCollision(Exception):
     """Raised when one configured compose sequence is a prefix of another."""
     pass
