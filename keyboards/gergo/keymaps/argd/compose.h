@@ -1,7 +1,7 @@
 // Auto-generated from keyboards/gergo/keymaps/argd/compose.conf.
 // DO NOT EDIT MANUALLY
 const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct ComposeTrie) {
-.keycode = KC_MINS,
+.keycode = KC_E,
 .sibling = &(const FLASHMEM struct ComposeTrie)
     {
     .keycode = KC_O,
@@ -10,13 +10,13 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
         .keycode = KC_DOT,
         .sibling = &(const FLASHMEM struct ComposeTrie)
             {
-            .keycode = KC_LSFT,
+            .keycode = KC_Q,
             .sibling = &(const FLASHMEM struct ComposeTrie)
                 {
-                .keycode = KC_PLUS,
+                .keycode = KC_P,
                 .sibling = &(const FLASHMEM struct ComposeTrie)
                     {
-                    .keycode = KC_A,
+                    .keycode = KC_D,
                     .sibling = &(const FLASHMEM struct ComposeTrie)
                         {
                         .keycode = KC_C,
@@ -28,191 +28,171 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                 .keycode = KC_S,
                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                     {
-                                    .keycode = KC_P,
+                                    .keycode = KC_T,
                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                         {
-                                        .keycode = KC_T,
+                                        .keycode = KC_X,
                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                             {
-                                            .keycode = KC_X,
+                                            .keycode = KC_N,
                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                 {
-                                                .keycode = KC_SLSH,
+                                                .keycode = KC_A,
                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                     {
-                                                    .keycode = KC_TILD,
+                                                    .keycode = KC_I,
                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                         {
-                                                        .keycode = KC_E,
+                                                        .keycode = KC_B,
                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                             {
-                                                            .keycode = KC_I,
+                                                            .keycode = KC_G,
                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                 {
-                                                                .keycode = KC_D,
+                                                                .keycode = KC_F,
                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                     {
-                                                                    .keycode = KC_B,
+                                                                    .keycode = KC_H,
                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                         {
-                                                                        .keycode = KC_G,
-                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                        .keycode = KC_Y,
+                                                                        .child = &(const FLASHMEM struct ComposeTrie)
                                                                             {
-                                                                            .keycode = KC_F,
-                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                {
-                                                                                .keycode = KC_H,
-                                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                    {
-                                                                                    .keycode = KC_Y,
-                                                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                        {
-                                                                                        .keycode = KC_U,
-                                                                                        .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                            {
-                                                                                            .keycode = KC_N,
-                                                                                            .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                                {
-                                                                                                .keycode = KC_O,
-                                                                                                .output = (const FLASHMEM char[]) {"ლ(ಠ益ಠლ)"},
-                                                                                                }
-                                                                                            ,
-                                                                                            }
-                                                                                        ,
-                                                                                        }
-                                                                                    ,
-                                                                                    }
-                                                                                ,
-                                                                                .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                    {
-                                                                                    .keycode = KC_A,
-                                                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                        {
-                                                                                        .keycode = KC_P,
-                                                                                        .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                            {
-                                                                                            .keycode = KC_P,
-                                                                                            .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                                {
-                                                                                                .keycode = KC_Y,
-                                                                                                .output = (const FLASHMEM char[]) {"ᕕ( ᐛ )ᕗ"},
-                                                                                                }
-                                                                                            ,
-                                                                                            }
-                                                                                        ,
-                                                                                        }
-                                                                                    ,
-                                                                                    }
-                                                                                ,
-                                                                                }
-                                                                            ,
+                                                                            .keycode = KC_U,
                                                                             .child = &(const FLASHMEM struct ComposeTrie)
                                                                                 {
-                                                                                .keycode = KC_L,
+                                                                                .keycode = KC_N,
                                                                                 .child = &(const FLASHMEM struct ComposeTrie)
                                                                                     {
-                                                                                    .keycode = KC_I,
-                                                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                        {
-                                                                                        .keycode = KC_P,
-                                                                                        .output = (const FLASHMEM char[]) {"╯°□°)╯︵ ┻━┻"},
-                                                                                        }
-                                                                                    ,
+                                                                                    .keycode = KC_O,
+                                                                                    .output = "ლ(ಠ益ಠლ)",
                                                                                     }
                                                                                 ,
                                                                                 }
                                                                             ,
                                                                             }
                                                                         ,
+                                                                        }
+                                                                    ,
+                                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                                        {
+                                                                        .keycode = KC_A,
                                                                         .child = &(const FLASHMEM struct ComposeTrie)
                                                                             {
-                                                                            .keycode = KC_A,
-                                                                            .output = (const FLASHMEM char[]) {"α"},
+                                                                            .keycode = KC_P,
+                                                                            .child = &(const FLASHMEM struct ComposeTrie)
+                                                                                {
+                                                                                .keycode = KC_P,
+                                                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                                                    {
+                                                                                    .keycode = KC_Y,
+                                                                                    .output = "ᕕ( ᐛ )ᕗ",
+                                                                                    }
+                                                                                ,
+                                                                                }
+                                                                            ,
+                                                                            }
+                                                                        ,
+                                                                        }
+                                                                    ,
+                                                                    }
+                                                                ,
+                                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                                    {
+                                                                    .keycode = KC_L,
+                                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                                        {
+                                                                        .keycode = KC_I,
+                                                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                                                            {
+                                                                            .keycode = KC_P,
+                                                                            .output = "╯°□°)╯︵ ┻━┻",
+                                                                            }
+                                                                        ,
+                                                                        }
+                                                                    ,
+                                                                    }
+                                                                ,
+                                                                }
+                                                            ,
+                                                            .child = &(const FLASHMEM struct ComposeTrie)
+                                                                {
+                                                                .keycode = KC_A,
+                                                                .output = "α",
+                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                    {
+                                                                    .keycode = KC_B,
+                                                                    .output = "β",
+                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                        {
+                                                                        .keycode = KC_G,
+                                                                        .output = "γ",
+                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                            {
+                                                                            .keycode = KC_D,
+                                                                            .output = "δ",
                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                 {
-                                                                                .keycode = KC_B,
-                                                                                .output = (const FLASHMEM char[]) {"β"},
+                                                                                .keycode = KC_E,
                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                     {
-                                                                                    .keycode = KC_G,
-                                                                                    .output = (const FLASHMEM char[]) {"γ"},
+                                                                                    .keycode = KC_Z,
+                                                                                    .output = "ζ",
                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                         {
-                                                                                        .keycode = KC_LSFT,
+                                                                                        .keycode = KC_T,
                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                             {
-                                                                                            .keycode = KC_D,
-                                                                                            .output = (const FLASHMEM char[]) {"δ"},
+                                                                                            .keycode = KC_I,
+                                                                                            .output = "ι",
                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                 {
-                                                                                                .keycode = KC_E,
+                                                                                                .keycode = KC_K,
+                                                                                                .output = "κ",
                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                     {
-                                                                                                    .keycode = KC_Z,
-                                                                                                    .output = (const FLASHMEM char[]) {"ζ"},
+                                                                                                    .keycode = KC_L,
+                                                                                                    .output = "λ",
                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                         {
-                                                                                                        .keycode = KC_T,
+                                                                                                        .keycode = KC_M,
+                                                                                                        .output = "μ",
                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                             {
-                                                                                                            .keycode = KC_I,
-                                                                                                            .output = (const FLASHMEM char[]) {"ι"},
+                                                                                                            .keycode = KC_N,
+                                                                                                            .output = "ν",
                                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                 {
-                                                                                                                .keycode = KC_K,
-                                                                                                                .output = (const FLASHMEM char[]) {"κ"},
+                                                                                                                .keycode = KC_X,
+                                                                                                                .output = "ξ",
                                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                     {
-                                                                                                                    .keycode = KC_L,
-                                                                                                                    .output = (const FLASHMEM char[]) {"λ"},
+                                                                                                                    .keycode = KC_P,
+                                                                                                                    .output = "π",
                                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                         {
-                                                                                                                        .keycode = KC_M,
-                                                                                                                        .output = (const FLASHMEM char[]) {"μ"},
+                                                                                                                        .keycode = KC_R,
+                                                                                                                        .output = "ρ",
                                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                             {
-                                                                                                                            .keycode = KC_N,
-                                                                                                                            .output = (const FLASHMEM char[]) {"ν"},
+                                                                                                                            .keycode = KC_S,
+                                                                                                                            .output = "σ",
                                                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                 {
-                                                                                                                                .keycode = KC_X,
-                                                                                                                                .output = (const FLASHMEM char[]) {"ξ"},
+                                                                                                                                .keycode = KC_U,
+                                                                                                                                .output = "ψ",
                                                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                     {
-                                                                                                                                    .keycode = KC_P,
-                                                                                                                                    .output = (const FLASHMEM char[]) {"π"},
+                                                                                                                                    .keycode = KC_F,
+                                                                                                                                    .output = "φ",
                                                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                         {
-                                                                                                                                        .keycode = KC_R,
-                                                                                                                                        .output = (const FLASHMEM char[]) {"ρ"},
+                                                                                                                                        .keycode = KC_C,
+                                                                                                                                        .output = "χ",
                                                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                             {
-                                                                                                                                            .keycode = KC_S,
-                                                                                                                                            .output = (const FLASHMEM char[]) {"σ"},
-                                                                                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                {
-                                                                                                                                                .keycode = KC_U,
-                                                                                                                                                .output = (const FLASHMEM char[]) {"ψ"},
-                                                                                                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                    {
-                                                                                                                                                    .keycode = KC_F,
-                                                                                                                                                    .output = (const FLASHMEM char[]) {"φ"},
-                                                                                                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                        {
-                                                                                                                                                        .keycode = KC_C,
-                                                                                                                                                        .output = (const FLASHMEM char[]) {"χ"},
-                                                                                                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                            {
-                                                                                                                                                            .keycode = KC_O,
-                                                                                                                                                            .output = (const FLASHMEM char[]) {"ω"},
-                                                                                                                                                            }
-                                                                                                                                                        ,
-                                                                                                                                                        }
-                                                                                                                                                    ,
-                                                                                                                                                    }
-                                                                                                                                                ,
-                                                                                                                                                }
-                                                                                                                                            ,
+                                                                                                                                            .keycode = KC_O,
+                                                                                                                                            .output = "ω",
                                                                                                                                             }
                                                                                                                                         ,
                                                                                                                                         }
@@ -231,30 +211,6 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                                                                             ,
                                                                                                             }
                                                                                                         ,
-                                                                                                        .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                                            {
-                                                                                                            .keycode = KC_H,
-                                                                                                            .output = (const FLASHMEM char[]) {"θ"},
-                                                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                {
-                                                                                                                .keycode = KC_A,
-                                                                                                                .output = (const FLASHMEM char[]) {"τ"},
-                                                                                                                }
-                                                                                                            ,
-                                                                                                            }
-                                                                                                        ,
-                                                                                                        }
-                                                                                                    ,
-                                                                                                    }
-                                                                                                ,
-                                                                                                .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                                    {
-                                                                                                    .keycode = KC_P,
-                                                                                                    .output = (const FLASHMEM char[]) {"ε"},
-                                                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                        {
-                                                                                                        .keycode = KC_T,
-                                                                                                        .output = (const FLASHMEM char[]) {"η"},
                                                                                                         }
                                                                                                     ,
                                                                                                     }
@@ -265,69 +221,28 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                                                         ,
                                                                                         .child = &(const FLASHMEM struct ComposeTrie)
                                                                                             {
-                                                                                            .keycode = KC_G,
-                                                                                            .output = (const FLASHMEM char[]) {"Γ"},
+                                                                                            .keycode = KC_H,
+                                                                                            .output = "θ",
                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                 {
-                                                                                                .keycode = KC_D,
-                                                                                                .output = (const FLASHMEM char[]) {"Δ"},
-                                                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                    {
-                                                                                                    .keycode = KC_T,
-                                                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                        {
-                                                                                                        .keycode = KC_L,
-                                                                                                        .output = (const FLASHMEM char[]) {"Λ"},
-                                                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                            {
-                                                                                                            .keycode = KC_X,
-                                                                                                            .output = (const FLASHMEM char[]) {"Ξ"},
-                                                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                {
-                                                                                                                .keycode = KC_P,
-                                                                                                                .output = (const FLASHMEM char[]) {"Π"},
-                                                                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                    {
-                                                                                                                    .keycode = KC_S,
-                                                                                                                    .output = (const FLASHMEM char[]) {"Σ"},
-                                                                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                        {
-                                                                                                                        .keycode = KC_U,
-                                                                                                                        .output = (const FLASHMEM char[]) {"Ψ"},
-                                                                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                            {
-                                                                                                                            .keycode = KC_F,
-                                                                                                                            .output = (const FLASHMEM char[]) {"Φ"},
-                                                                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                {
-                                                                                                                                .keycode = KC_O,
-                                                                                                                                .output = (const FLASHMEM char[]) {"Ω"},
-                                                                                                                                }
-                                                                                                                            ,
-                                                                                                                            }
-                                                                                                                        ,
-                                                                                                                        }
-                                                                                                                    ,
-                                                                                                                    }
-                                                                                                                ,
-                                                                                                                }
-                                                                                                            ,
-                                                                                                            }
-                                                                                                        ,
-                                                                                                        }
-                                                                                                    ,
-                                                                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                                        {
-                                                                                                        .keycode = KC_H,
-                                                                                                        .output = (const FLASHMEM char[]) {"Θ"},
-                                                                                                        }
-                                                                                                    ,
-                                                                                                    }
-                                                                                                ,
+                                                                                                .keycode = KC_A,
+                                                                                                .output = "τ",
                                                                                                 }
                                                                                             ,
                                                                                             }
                                                                                         ,
+                                                                                        }
+                                                                                    ,
+                                                                                    }
+                                                                                ,
+                                                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                                                    {
+                                                                                    .keycode = KC_P,
+                                                                                    .output = "ε",
+                                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                                        {
+                                                                                        .keycode = KC_T,
+                                                                                        .output = "η",
                                                                                         }
                                                                                     ,
                                                                                     }
@@ -338,119 +253,119 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                                         ,
                                                                         }
                                                                     ,
-                                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                                    }
+                                                                ,
+                                                                }
+                                                            ,
+                                                            }
+                                                        ,
+                                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                                            {
+                                                            .keycode = KC_B,
+                                                            .child = &(const FLASHMEM struct ComposeTrie)
+                                                                {
+                                                                .keycode = KC_A,
+                                                                .output = "𝔸",
+                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                    {
+                                                                    .keycode = KC_B,
+                                                                    .output = "𝔹",
+                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                         {
-                                                                        .keycode = KC_B,
-                                                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                                                        .keycode = KC_C,
+                                                                        .output = "ℂ",
+                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                             {
-                                                                            .keycode = KC_A,
-                                                                            .output = (const FLASHMEM char[]) {"𝔸"},
+                                                                            .keycode = KC_D,
+                                                                            .output = "𝔻",
                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                 {
-                                                                                .keycode = KC_B,
-                                                                                .output = (const FLASHMEM char[]) {"𝔹"},
+                                                                                .keycode = KC_E,
+                                                                                .output = "𝔼",
                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                     {
-                                                                                    .keycode = KC_C,
-                                                                                    .output = (const FLASHMEM char[]) {"ℂ"},
+                                                                                    .keycode = KC_F,
+                                                                                    .output = "𝔽",
                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                         {
-                                                                                        .keycode = KC_D,
-                                                                                        .output = (const FLASHMEM char[]) {"𝔻"},
+                                                                                        .keycode = KC_G,
+                                                                                        .output = "𝔾",
                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                             {
-                                                                                            .keycode = KC_E,
-                                                                                            .output = (const FLASHMEM char[]) {"𝔼"},
+                                                                                            .keycode = KC_H,
+                                                                                            .output = "ℍ",
                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                 {
-                                                                                                .keycode = KC_F,
-                                                                                                .output = (const FLASHMEM char[]) {"𝔽"},
+                                                                                                .keycode = KC_I,
+                                                                                                .output = "𝕀",
                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                     {
-                                                                                                    .keycode = KC_G,
-                                                                                                    .output = (const FLASHMEM char[]) {"𝔾"},
+                                                                                                    .keycode = KC_J,
+                                                                                                    .output = "𝕁",
                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                         {
-                                                                                                        .keycode = KC_H,
-                                                                                                        .output = (const FLASHMEM char[]) {"ℍ"},
+                                                                                                        .keycode = KC_K,
+                                                                                                        .output = "𝕂",
                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                             {
-                                                                                                            .keycode = KC_I,
-                                                                                                            .output = (const FLASHMEM char[]) {"𝕀"},
+                                                                                                            .keycode = KC_L,
+                                                                                                            .output = "𝕃",
                                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                 {
-                                                                                                                .keycode = KC_J,
-                                                                                                                .output = (const FLASHMEM char[]) {"𝕁"},
+                                                                                                                .keycode = KC_M,
+                                                                                                                .output = "𝕄",
                                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                     {
-                                                                                                                    .keycode = KC_K,
-                                                                                                                    .output = (const FLASHMEM char[]) {"𝕂"},
+                                                                                                                    .keycode = KC_N,
+                                                                                                                    .output = "ℕ",
                                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                         {
-                                                                                                                        .keycode = KC_L,
-                                                                                                                        .output = (const FLASHMEM char[]) {"𝕃"},
+                                                                                                                        .keycode = KC_O,
+                                                                                                                        .output = "𝕆",
                                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                             {
-                                                                                                                            .keycode = KC_M,
-                                                                                                                            .output = (const FLASHMEM char[]) {"𝕄"},
+                                                                                                                            .keycode = KC_P,
+                                                                                                                            .output = "ℙ",
                                                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                 {
-                                                                                                                                .keycode = KC_N,
-                                                                                                                                .output = (const FLASHMEM char[]) {"ℕ"},
+                                                                                                                                .keycode = KC_Q,
+                                                                                                                                .output = "ℚ",
                                                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                     {
-                                                                                                                                    .keycode = KC_O,
-                                                                                                                                    .output = (const FLASHMEM char[]) {"𝕆"},
+                                                                                                                                    .keycode = KC_R,
+                                                                                                                                    .output = "ℝ",
                                                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                         {
-                                                                                                                                        .keycode = KC_P,
-                                                                                                                                        .output = (const FLASHMEM char[]) {"ℙ"},
+                                                                                                                                        .keycode = KC_S,
+                                                                                                                                        .output = "𝕊",
                                                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                             {
-                                                                                                                                            .keycode = KC_Q,
-                                                                                                                                            .output = (const FLASHMEM char[]) {"ℚ"},
+                                                                                                                                            .keycode = KC_T,
+                                                                                                                                            .output = "𝕋",
                                                                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                                 {
-                                                                                                                                                .keycode = KC_R,
-                                                                                                                                                .output = (const FLASHMEM char[]) {"ℝ"},
+                                                                                                                                                .keycode = KC_U,
+                                                                                                                                                .output = "𝕌",
                                                                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                                     {
-                                                                                                                                                    .keycode = KC_S,
-                                                                                                                                                    .output = (const FLASHMEM char[]) {"𝕊"},
+                                                                                                                                                    .keycode = KC_V,
+                                                                                                                                                    .output = "𝕍",
                                                                                                                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                                         {
-                                                                                                                                                        .keycode = KC_T,
-                                                                                                                                                        .output = (const FLASHMEM char[]) {"𝕋"},
+                                                                                                                                                        .keycode = KC_W,
+                                                                                                                                                        .output = "𝕎",
                                                                                                                                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                                             {
-                                                                                                                                                            .keycode = KC_U,
-                                                                                                                                                            .output = (const FLASHMEM char[]) {"𝕌"},
+                                                                                                                                                            .keycode = KC_X,
+                                                                                                                                                            .output = "𝕏",
                                                                                                                                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                                                 {
-                                                                                                                                                                .keycode = KC_V,
-                                                                                                                                                                .output = (const FLASHMEM char[]) {"𝕍"},
+                                                                                                                                                                .keycode = KC_Y,
+                                                                                                                                                                .output = "𝕐",
                                                                                                                                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                                                                                                                     {
-                                                                                                                                                                    .keycode = KC_W,
-                                                                                                                                                                    .output = (const FLASHMEM char[]) {"𝕎"},
-                                                                                                                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                                        {
-                                                                                                                                                                        .keycode = KC_X,
-                                                                                                                                                                        .output = (const FLASHMEM char[]) {"𝕏"},
-                                                                                                                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                                            {
-                                                                                                                                                                            .keycode = KC_Y,
-                                                                                                                                                                            .output = (const FLASHMEM char[]) {"𝕐"},
-                                                                                                                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                                                                                                                {
-                                                                                                                                                                                .keycode = KC_Z,
-                                                                                                                                                                                .output = (const FLASHMEM char[]) {"ℤ"},
-                                                                                                                                                                                }
-                                                                                                                                                                            ,
-                                                                                                                                                                            }
-                                                                                                                                                                        ,
-                                                                                                                                                                        }
-                                                                                                                                                                    ,
+                                                                                                                                                                    .keycode = KC_Z,
+                                                                                                                                                                    .output = "ℤ",
                                                                                                                                                                     }
                                                                                                                                                                 ,
                                                                                                                                                                 }
@@ -501,30 +416,18 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                                     ,
                                                                     }
                                                                 ,
-                                                                .child = &(const FLASHMEM struct ComposeTrie)
-                                                                    {
-                                                                    .keycode = KC_E,
-                                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                                        {
-                                                                        .keycode = KC_G,
-                                                                        .child = &(const FLASHMEM struct ComposeTrie)
-                                                                            {
-                                                                            .keycode = KC_C,
-                                                                            .output = (const FLASHMEM char[]) {"℃"},
-                                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                                {
-                                                                                .keycode = KC_F,
-                                                                                .output = (const FLASHMEM char[]) {"℉"},
-                                                                                }
-                                                                            ,
-                                                                            }
-                                                                        ,
-                                                                        }
-                                                                    ,
-                                                                    }
-                                                                ,
                                                                 }
                                                             ,
+                                                            }
+                                                        ,
+                                                        }
+                                                    ,
+                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                        {
+                                                        .keycode = KC_N,
+                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                            {
+                                                            .keycode = KC_I,
                                                             .child = &(const FLASHMEM struct ComposeTrie)
                                                                 {
                                                                 .keycode = KC_N,
@@ -534,26 +437,10 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                                     .child = &(const FLASHMEM struct ComposeTrie)
                                                                         {
                                                                         .keycode = KC_N,
-                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                                            {
-                                                                            .keycode = KC_I,
-                                                                            .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                {
-                                                                                .keycode = KC_N,
-                                                                                .child = &(const FLASHMEM struct ComposeTrie)
-                                                                                    {
-                                                                                    .keycode = KC_T,
-                                                                                    .output = (const FLASHMEM char[]) {"∭"},
-                                                                                    }
-                                                                                ,
-                                                                                }
-                                                                            ,
-                                                                            }
-                                                                        ,
                                                                         .child = &(const FLASHMEM struct ComposeTrie)
                                                                             {
                                                                             .keycode = KC_T,
-                                                                            .output = (const FLASHMEM char[]) {"∬"},
+                                                                            .output = "∭",
                                                                             }
                                                                         ,
                                                                         }
@@ -563,7 +450,7 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                                 .child = &(const FLASHMEM struct ComposeTrie)
                                                                     {
                                                                     .keycode = KC_T,
-                                                                    .output = (const FLASHMEM char[]) {"∫"},
+                                                                    .output = "∬",
                                                                     }
                                                                 ,
                                                                 }
@@ -572,31 +459,130 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                         ,
                                                         .child = &(const FLASHMEM struct ComposeTrie)
                                                             {
-                                                            .keycode = KC_E,
-                                                            .output = (const FLASHMEM char[]) {"∈"},
+                                                            .keycode = KC_DOT,
+                                                            .output = "∈",
+                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                {
+                                                                .keycode = KC_T,
+                                                                .output = "∫",
+                                                                }
+                                                            ,
                                                             }
                                                         ,
-                                                        }
-                                                    ,
-                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                        {
-                                                        .keycode = KC_EQL,
-                                                        .output = (const FLASHMEM char[]) {"≅"},
                                                         }
                                                     ,
                                                     }
                                                 ,
                                                 .child = &(const FLASHMEM struct ComposeTrie)
                                                     {
-                                                    .keycode = KC_EQL,
-                                                    .output = (const FLASHMEM char[]) {"≠"},
+                                                    .keycode = KC_P,
                                                     .sibling = &(const FLASHMEM struct ComposeTrie)
                                                         {
-                                                        .keycode = KC_E,
+                                                        .keycode = KC_L,
                                                         .child = &(const FLASHMEM struct ComposeTrie)
                                                             {
                                                             .keycode = KC_E,
-                                                            .output = (const FLASHMEM char[]) {"∉"},
+                                                            .child = &(const FLASHMEM struct ComposeTrie)
+                                                                {
+                                                                .keycode = KC_F,
+                                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                                    {
+                                                                    .keycode = KC_DOT,
+                                                                    .output = "ℵ",
+                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                        {
+                                                                        .keycode = KC_N,
+                                                                        .output = "ℵ₀",
+                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                            {
+                                                                            .keycode = KC_O,
+                                                                            .output = "ℵ₁",
+                                                                            }
+                                                                        ,
+                                                                        }
+                                                                    ,
+                                                                    }
+                                                                ,
+                                                                }
+                                                            ,
+                                                            }
+                                                        ,
+                                                        }
+                                                    ,
+                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                        {
+                                                        .keycode = KC_P,
+                                                        .output = "≅",
+                                                        }
+                                                    ,
+                                                    }
+                                                ,
+                                                }
+                                            ,
+                                            .child = &(const FLASHMEM struct ComposeTrie)
+                                                {
+                                                .keycode = KC_E,
+                                                .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                    {
+                                                    .keycode = KC_I,
+                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                        {
+                                                        .keycode = KC_N,
+                                                        .output = "∉",
+                                                        }
+                                                    ,
+                                                    }
+                                                ,
+                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                    {
+                                                    .keycode = KC_Q,
+                                                    .output = "≠",
+                                                    }
+                                                ,
+                                                }
+                                            ,
+                                            }
+                                        ,
+                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                            {
+                                            .keycode = KC_X,
+                                            .output = "×",
+                                            }
+                                        ,
+                                        }
+                                    ,
+                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                        {
+                                        .keycode = KC_H,
+                                        .output = "Þ",
+                                        }
+                                    ,
+                                    }
+                                ,
+                                .child = &(const FLASHMEM struct ComposeTrie)
+                                    {
+                                    .keycode = KC_O,
+                                    .output = "§",
+                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                        {
+                                        .keycode = KC_Q,
+                                        .output = "√",
+                                        .sibling = &(const FLASHMEM struct ComposeTrie)
+                                            {
+                                            .keycode = KC_U,
+                                            .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                {
+                                                .keycode = KC_H,
+                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                    {
+                                                    .keycode = KC_R,
+                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                        {
+                                                        .keycode = KC_U,
+                                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                                            {
+                                                            .keycode = KC_G,
+                                                            .output = "¯\\_(ツ)_/¯",
                                                             }
                                                         ,
                                                         }
@@ -607,56 +593,81 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                             ,
                                             .child = &(const FLASHMEM struct ComposeTrie)
                                                 {
-                                                .keycode = KC_X,
-                                                .output = (const FLASHMEM char[]) {"×"},
+                                                .keycode = KC_M,
+                                                .output = "∑",
                                                 }
                                             ,
                                             }
                                         ,
-                                        .child = &(const FLASHMEM struct ComposeTrie)
-                                            {
-                                            .keycode = KC_H,
-                                            .output = (const FLASHMEM char[]) {"Þ"},
-                                            }
-                                        ,
-                                        }
-                                    ,
-                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                        {
-                                        .keycode = KC_P,
-                                        .output = (const FLASHMEM char[]) {"¶"},
                                         }
                                     ,
                                     }
                                 ,
-                                .child = &(const FLASHMEM struct ComposeTrie)
+                                }
+                            ,
+                            .child = &(const FLASHMEM struct ComposeTrie)
+                                {
+                                .keycode = KC_B,
+                                .output = "£",
+                                }
+                            ,
+                            }
+                        ,
+                        .child = &(const FLASHMEM struct ComposeTrie)
+                            {
+                            .keycode = KC_E,
+                            .sibling = &(const FLASHMEM struct ComposeTrie)
+                                {
+                                .keycode = KC_COMM,
+                                .output = "ç",
+                                .sibling = &(const FLASHMEM struct ComposeTrie)
                                     {
-                                    .keycode = KC_S,
-                                    .output = (const FLASHMEM char[]) {"ß"},
-                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                    .keycode = KC_G,
+                                    .child = &(const FLASHMEM struct ComposeTrie)
                                         {
-                                        .keycode = KC_O,
-                                        .output = (const FLASHMEM char[]) {"§"},
+                                        .keycode = KC_G,
+                                        .output = "Γ",
                                         .sibling = &(const FLASHMEM struct ComposeTrie)
                                             {
-                                            .keycode = KC_Q,
-                                            .output = (const FLASHMEM char[]) {"√"},
+                                            .keycode = KC_D,
+                                            .output = "Δ",
                                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                                 {
-                                                .keycode = KC_U,
+                                                .keycode = KC_T,
                                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                                     {
-                                                    .keycode = KC_H,
-                                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                                    .keycode = KC_L,
+                                                    .output = "Λ",
+                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
                                                         {
-                                                        .keycode = KC_R,
-                                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                                        .keycode = KC_X,
+                                                        .output = "Ξ",
+                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
                                                             {
-                                                            .keycode = KC_U,
-                                                            .child = &(const FLASHMEM struct ComposeTrie)
+                                                            .keycode = KC_P,
+                                                            .output = "Π",
+                                                            .sibling = &(const FLASHMEM struct ComposeTrie)
                                                                 {
-                                                                .keycode = KC_G,
-                                                                .output = (const FLASHMEM char[]) {"¯\\_(ツ)_/¯"},
+                                                                .keycode = KC_S,
+                                                                .output = "Σ",
+                                                                .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                    {
+                                                                    .keycode = KC_U,
+                                                                    .output = "Ψ",
+                                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                        {
+                                                                        .keycode = KC_F,
+                                                                        .output = "Φ",
+                                                                        .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                                            {
+                                                                            .keycode = KC_O,
+                                                                            .output = "Ω",
+                                                                            }
+                                                                        ,
+                                                                        }
+                                                                    ,
+                                                                    }
+                                                                ,
                                                                 }
                                                             ,
                                                             }
@@ -667,8 +678,8 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                                                 ,
                                                 .child = &(const FLASHMEM struct ComposeTrie)
                                                     {
-                                                    .keycode = KC_M,
-                                                    .output = (const FLASHMEM char[]) {"∑"},
+                                                    .keycode = KC_H,
+                                                    .output = "Θ",
                                                     }
                                                 ,
                                                 }
@@ -683,24 +694,11 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                             ,
                             .child = &(const FLASHMEM struct ComposeTrie)
                                 {
-                                .keycode = KC_MINS,
-                                .output = (const FLASHMEM char[]) {"£"},
-                                }
-                            ,
-                            }
-                        ,
-                        .child = &(const FLASHMEM struct ComposeTrie)
-                            {
-                            .keycode = KC_EQL,
-                            .output = (const FLASHMEM char[]) {"€"},
-                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                {
-                                .keycode = KC_SLSH,
-                                .output = (const FLASHMEM char[]) {"¢"},
-                                .sibling = &(const FLASHMEM struct ComposeTrie)
+                                .keycode = KC_N,
+                                .child = &(const FLASHMEM struct ComposeTrie)
                                     {
-                                    .keycode = KC_COMM,
-                                    .output = (const FLASHMEM char[]) {"ç"},
+                                    .keycode = KC_T,
+                                    .output = "¢",
                                     }
                                 ,
                                 }
@@ -712,32 +710,32 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                     .child = &(const FLASHMEM struct ComposeTrie)
                         {
                         .keycode = KC_E,
-                        .output = (const FLASHMEM char[]) {"æ"},
                         .sibling = &(const FLASHMEM struct ComposeTrie)
                             {
-                            .keycode = KC_L,
+                            .keycode = KC_I,
                             .child = &(const FLASHMEM struct ComposeTrie)
                                 {
-                                .keycode = KC_E,
-                                .child = &(const FLASHMEM struct ComposeTrie)
+                                .keycode = KC_V,
+                                .output = "÷",
+                                }
+                            ,
+                            }
+                        ,
+                        .child = &(const FLASHMEM struct ComposeTrie)
+                            {
+                            .keycode = KC_G,
+                            .child = &(const FLASHMEM struct ComposeTrie)
+                                {
+                                .keycode = KC_DOT,
+                                .output = "°",
+                                .sibling = &(const FLASHMEM struct ComposeTrie)
                                     {
-                                    .keycode = KC_F,
-                                    .child = &(const FLASHMEM struct ComposeTrie)
+                                    .keycode = KC_C,
+                                    .output = "℃",
+                                    .sibling = &(const FLASHMEM struct ComposeTrie)
                                         {
-                                        .keycode = KC_DOT,
-                                        .output = (const FLASHMEM char[]) {"ℵ"},
-                                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                                            {
-                                            .keycode = KC_P0,
-                                            .output = (const FLASHMEM char[]) {"ℵ₀"},
-                                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                                {
-                                                .keycode = KC_P1,
-                                                .output = (const FLASHMEM char[]) {"ℵ₁"},
-                                                }
-                                            ,
-                                            }
-                                        ,
+                                        .keycode = KC_F,
+                                        .output = "℉",
                                         }
                                     ,
                                     }
@@ -752,63 +750,25 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
                 ,
                 .child = &(const FLASHMEM struct ComposeTrie)
                     {
-                    .keycode = KC_MINS,
-                    .output = (const FLASHMEM char[]) {"±"},
+                    .keycode = KC_M,
+                    .output = "±",
+                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                        {
+                        .keycode = KC_P,
+                        .output = "¶",
+                        }
+                    ,
                     }
                 ,
                 }
             ,
             .child = &(const FLASHMEM struct ComposeTrie)
                 {
-                .keycode = KC_SLSH,
-                .sibling = &(const FLASHMEM struct ComposeTrie)
-                    {
-                    .keycode = KC_O,
-                    .sibling = &(const FLASHMEM struct ComposeTrie)
-                        {
-                        .keycode = KC_A,
-                        .sibling = &(const FLASHMEM struct ComposeTrie)
-                            {
-                            .keycode = KC_S,
-                            .sibling = &(const FLASHMEM struct ComposeTrie)
-                                {
-                                .keycode = KC_SCLN,
-                                .child = &(const FLASHMEM struct ComposeTrie)
-                                    {
-                                    .keycode = KC_MINS,
-                                    .output = (const FLASHMEM char[]) {"÷"},
-                                    }
-                                ,
-                                }
-                            ,
-                            .child = &(const FLASHMEM struct ComposeTrie)
-                                {
-                                .keycode = KC_S,
-                                .output = (const FLASHMEM char[]) {"ẞ"},
-                                }
-                            ,
-                            }
-                        ,
-                        .child = &(const FLASHMEM struct ComposeTrie)
-                            {
-                            .keycode = KC_E,
-                            .output = (const FLASHMEM char[]) {"Æ"},
-                            }
-                        ,
-                        }
-                    ,
-                    .child = &(const FLASHMEM struct ComposeTrie)
-                        {
-                        .keycode = KC_E,
-                        .output = (const FLASHMEM char[]) {"Œ"},
-                        }
-                    ,
-                    }
-                ,
+                .keycode = KC_U,
                 .child = &(const FLASHMEM struct ComposeTrie)
                     {
-                    .keycode = KC_SLSH,
-                    .output = (const FLASHMEM char[]) {"¿"},
+                    .keycode = KC_E,
+                    .output = "¿",
                     }
                 ,
                 }
@@ -818,7 +778,7 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
         .child = &(const FLASHMEM struct ComposeTrie)
             {
             .keycode = KC_DOT,
-            .output = (const FLASHMEM char[]) {"…"},
+            .output = "…",
             }
         ,
         }
@@ -826,79 +786,73 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
     .child = &(const FLASHMEM struct ComposeTrie)
         {
         .keycode = KC_C,
-        .output = (const FLASHMEM char[]) {"©"},
+        .output = "©",
         .sibling = &(const FLASHMEM struct ComposeTrie)
             {
             .keycode = KC_R,
-            .output = (const FLASHMEM char[]) {"®"},
+            .output = "®",
             .sibling = &(const FLASHMEM struct ComposeTrie)
                 {
-                .keycode = KC_E,
-                .output = (const FLASHMEM char[]) {"œ"},
+                .keycode = KC_P,
+                .output = "⊕",
                 .sibling = &(const FLASHMEM struct ComposeTrie)
                     {
-                    .keycode = KC_O,
-                    .output = (const FLASHMEM char[]) {"∞"},
+                    .keycode = KC_M,
+                    .output = "⊖",
                     .sibling = &(const FLASHMEM struct ComposeTrie)
                         {
-                        .keycode = KC_PLUS,
-                        .output = (const FLASHMEM char[]) {"⊕"},
+                        .keycode = KC_X,
+                        .output = "⊗",
                         .sibling = &(const FLASHMEM struct ComposeTrie)
                             {
-                            .keycode = KC_MINS,
-                            .output = (const FLASHMEM char[]) {"⊖"},
+                            .keycode = KC_D,
+                            .output = "⊘",
                             .sibling = &(const FLASHMEM struct ComposeTrie)
                                 {
-                                .keycode = KC_X,
-                                .output = (const FLASHMEM char[]) {"⊗"},
+                                .keycode = KC_O,
+                                .output = "∞",
                                 .sibling = &(const FLASHMEM struct ComposeTrie)
                                     {
-                                    .keycode = KC_SLSH,
-                                    .output = (const FLASHMEM char[]) {"⊘"},
-                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                    .keycode = KC_I,
+                                    .child = &(const FLASHMEM struct ComposeTrie)
                                         {
-                                        .keycode = KC_I,
-                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                        .keycode = KC_N,
+                                        .sibling = &(const FLASHMEM struct ComposeTrie)
                                             {
-                                            .keycode = KC_N,
-                                            .sibling = &(const FLASHMEM struct ComposeTrie)
+                                            .keycode = KC_I,
+                                            .child = &(const FLASHMEM struct ComposeTrie)
                                                 {
-                                                .keycode = KC_I,
-                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                .keycode = KC_N,
+                                                .sibling = &(const FLASHMEM struct ComposeTrie)
                                                     {
-                                                    .keycode = KC_N,
-                                                    .sibling = &(const FLASHMEM struct ComposeTrie)
+                                                    .keycode = KC_I,
+                                                    .child = &(const FLASHMEM struct ComposeTrie)
                                                         {
-                                                        .keycode = KC_I,
+                                                        .keycode = KC_N,
                                                         .child = &(const FLASHMEM struct ComposeTrie)
                                                             {
-                                                            .keycode = KC_N,
-                                                            .child = &(const FLASHMEM struct ComposeTrie)
-                                                                {
-                                                                .keycode = KC_T,
-                                                                .output = (const FLASHMEM char[]) {"∰"},
-                                                                }
-                                                            ,
+                                                            .keycode = KC_T,
+                                                            .output = "∰",
                                                             }
                                                         ,
                                                         }
                                                     ,
-                                                    .child = &(const FLASHMEM struct ComposeTrie)
-                                                        {
-                                                        .keycode = KC_T,
-                                                        .output = (const FLASHMEM char[]) {"∯"},
-                                                        }
-                                                    ,
+                                                    }
+                                                ,
+                                                .child = &(const FLASHMEM struct ComposeTrie)
+                                                    {
+                                                    .keycode = KC_T,
+                                                    .output = "∯",
                                                     }
                                                 ,
                                                 }
                                             ,
-                                            .child = &(const FLASHMEM struct ComposeTrie)
-                                                {
-                                                .keycode = KC_T,
-                                                .output = (const FLASHMEM char[]) {"∮"},
-                                                }
-                                            ,
+                                            }
+                                        ,
+                                        .child = &(const FLASHMEM struct ComposeTrie)
+                                            {
+                                            .keycode = KC_T,
+                                            .output = "∮",
                                             }
                                         ,
                                         }
@@ -923,17 +877,38 @@ const FLASHMEM ComposeTrie* const compose_trie = &(const FLASHMEM struct Compose
 ,
 .child = &(const FLASHMEM struct ComposeTrie)
     {
-    .keycode = KC_MINS,
-    .child = &(const FLASHMEM struct ComposeTrie)
+    .keycode = KC_N,
+    .sibling = &(const FLASHMEM struct ComposeTrie)
         {
-        .keycode = KC_DOT,
-        .output = (const FLASHMEM char[]) {"–"},
+        .keycode = KC_M,
         .sibling = &(const FLASHMEM struct ComposeTrie)
             {
-            .keycode = KC_MINS,
-            .output = (const FLASHMEM char[]) {"—"},
+            .keycode = KC_U,
+            .child = &(const FLASHMEM struct ComposeTrie)
+                {
+                .keycode = KC_R,
+                .child = &(const FLASHMEM struct ComposeTrie)
+                    {
+                    .keycode = KC_O,
+                    .output = "€",
+                    }
+                ,
+                }
+            ,
             }
         ,
+        .child = &(const FLASHMEM struct ComposeTrie)
+            {
+            .keycode = KC_D,
+            .output = "—",
+            }
+        ,
+        }
+    ,
+    .child = &(const FLASHMEM struct ComposeTrie)
+        {
+        .keycode = KC_D,
+        .output = "–",
         }
     ,
     }
