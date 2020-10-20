@@ -94,7 +94,7 @@ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 ),
 };
 
-static uint16_t last_keypress = 0;
+static uint32_t last_keypress = 0;
 static char keypress_str[5] = "00000";
 
 static void increment_keypress_str(void) {
@@ -117,7 +117,7 @@ static void increment_keypress_str(void) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
-        last_keypress = timer_read();
+        last_keypress = timer_read32();
         increment_keypress_str();
         oled_on();
     }
@@ -176,7 +176,7 @@ static void render_main(void) {
 }
 
 void oled_task_user(void) {
-    if (timer_elapsed(last_keypress) > 30000) {
+    if (timer_elapsed32(last_keypress) > 30000) {
         oled_off();
     } else {
         render_main();
