@@ -5,8 +5,9 @@
 # Firmware options
 COMPOSE_ENABLE = yes
 UNICODE_ENABLE = yes
-EXTRAKEY_ENABLE = yes
+EXTRAKEY_ENABLE = no
 OLED_DRIVER_ENABLE = yes
+NO_USB_STARTUP_CHECK = yes
 
 # Minify the firmware, but break macros and functions
 EXTRAFLAGS += -flto
